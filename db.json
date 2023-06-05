@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "cpf": "097.433.283-60",
+      "name": "Kenedy Alves Gondim",
+      "birthday": "2004-07-07",
+      "email": "kenedyal478@gmail.com",
+      "passwd": "Spfc2004!",
+      "address": {
+        "house": "834B",
+        "street": "Avenida 12",
+        "neighbourhood": "Piratininga",
+        "city": "Maracanaú",
+        "state": "CE"
+      },
+      "id": 1
+    }
+  ]
+}

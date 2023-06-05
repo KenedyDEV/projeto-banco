@@ -1,0 +1,242 @@
+/*!****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./styles/createAccount.css ***!
+  \****************************************************************************/
+/* CSS para o formulário de criação de conta */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.aside-left {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px;
+}
+.aside-left > h1 {
+  padding-top: 100px;
+  width: 600px;
+  font-size: 2.8em;
+  text-align: left;
+  font-weight: 700;
+}
+
+#content > h1 {
+  font-size: 0px;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#content {
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #45a049;
+  width: 70%;
+  background-color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: none;
+}
+
+label {
+  display: block;
+  margin-top: 50px;
+  color: #333;
+  font-size: 0.8em;
+}
+
+.error-message {
+  border: 1px solid red;
+  color: red;
+}
+
+.success-message {
+  border: 1px solid green;
+  color: green;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"] {
+  width: 90%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 8px;
+  border-radius: 3px;
+  font-size: 1em;
+}
+
+/* CSS para o botão de avançar */
+
+button.next {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  background-color: rgb(141, 31, 213);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 40px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+
+button.next:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button.next:disabled:hover {
+  background-color: #ccc;
+}
+
+@media (min-width: 0px) and (max-width: 1000px) {
+  section {
+    display: flex;
+    height: 120vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #content {
+    width: 100%;
+    height: 100%;
+    padding: 0px 20px 20px;
+  }
+  .aside-left {
+    display: none;
+  }
+  #content > h1 {
+    margin-top: 50px;
+    font-size: 2.8em;
+    text-align: left;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="email"] {
+    width: 98%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 8px;
+    border-radius: 3px;
+    font-size: 1em;
+  }
+
+  /* CSS para o botão de avançar */
+
+  button.next {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    background-color: rgb(141, 31, 213);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 40px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  button.next:hover {
+    background-color: #45a049;
+  }
+
+  button.next:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  button.next:disabled:hover {
+    background-color: #ccc;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1250px) {
+  .aside-left > h1 {
+    font-size: 2.3em;
+    width: 480px;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  #content > h1 {
+    font-size: 0px;
+  }
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  section {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #content {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    background-color: #45a049;
+    width: 70%;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+  }
+}

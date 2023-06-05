@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Nubank Web App</title>
+    <link rel="stylesheet" href="../css/loginAccount.css" />
+    <script src="../public/loginAccount.bundle.min.js" type="module" defer></script>
+  </head>
+  <body>
+    <section>
+      <div class="div-img">
+        <img
+          src="img/nubank_novo-logo-e1621264927325-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div class="rest">
+        <div class="login">
+          <form action="" id="form">
+            <div class="div-h1"><h1>Acesse sua conta</h1></div>
+
+            <div class="div-cpf">
+              <label for="cpf"><span style="color: rgba(255, 255, 255, 0.64);">CPF:</span></label>
+              <input type="number" maxlength="14" name="" id="cpf">
+              <span id="cpf-error" style="font-size: 12px; font-style: italic; padding-left: 1px;color: red;"></span>
+            </div>
+
+            <div class="div-password">
+              <label for="password"><span style="color: rgba(255, 255, 255, 0.64);">Senha:</span></label>
+              <div>
+              <input type="password" name="" id="password" />
+              <img src="./img/c2bba84371248dee542d499d80ea9754 (1).png" id="eye" style="height: 20px;"  alt="">
+              </div>
+              <span id="password-error" style="font-size: 12px; font-style: italic; padding-left: 1px;color: red;"></span>
+
+
+              <span style="color: rgba(255, 255, 255, 0.64);">Possui 8 caracteres ou mais</span>
+            </div>
+            <button type="submit" class="btn-continue">Continuar</button>
+          </form>
+        </div>
+        <footer class="footer">
+          <a href="">Esqueci a senha</a>
+          <a href="./index.html">Não sou cliente</a>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>

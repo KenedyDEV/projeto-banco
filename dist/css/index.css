@@ -1,0 +1,550 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121212;
+}
+nav {
+  height: 56px;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 46px;
+  padding-right: 46px;
+}
+nav > a {
+  color: rgb(166, 81, 222);
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+}
+
+img {
+  height: 25px;
+}
+.allBlack {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 3em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+section {
+  height: 92.5vh;
+  width: 100%;
+  background-image: url(./html/img/pexels-fauxels-3228761.jpg);
+  background-repeat: no-repeat;
+}
+.texts {
+  display: flex;
+  flex-direction: column;
+}
+.texts > h1 {
+  font-size: 3rem;
+  line-height: 1.16;
+  font-family: "Raleway", sans-serif;
+  margin-left: 90px;
+  font-weight: 800;
+}
+.texts > h3 {
+  font-size: 1.5rem;
+  line-height: 1.32;
+  margin-left: 90px;
+  font-family: "Raleway", sans-serif;
+}
+
+.aside {
+  height: 303px;
+  width: 330px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.aside > h3 {
+  padding: 21px;
+  color: black;
+  font-size: 0.5em;
+  font-family: "Raleway", sans-serif;
+}
+.a-cpf {
+  width: 80%;
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+}
+
+.a-cpf > label {
+  font-size: 12px;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.a-cpf > input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 95%;
+  height: 40px;
+  font-size: 0.6em;
+  background-color: transparent;
+}
+
+.a-cpf > input:focus {
+  outline: transparent;
+  background-color: transparent;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.btn-continue {
+  width: 282px;
+  height: 48px;
+
+  border-radius: 50px;
+  border: 1px solid;
+  font-family: Arial, Helvetica, sans-serif;
+
+  text-align: left;
+  padding-left: 20px;
+  color: rgb(0, 0, 0, 0.5);
+}
+.btn-continue:disabled {
+  cursor: not-allowed;
+}
+
+.btn-continue-habilited {
+  width: 282px;
+  height: 48px;
+  background-color: rgb(141, 31, 213);
+  border-radius: 50px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding-left: 20px;
+  color: white;
+  font-weight: 700;
+}
+
+.error-message {
+  color: red;
+  border-color: red;
+}
+.success-message {
+  color: rgb(11, 176, 33);
+  border-color: rgb(11, 176, 33);
+}
+
+#cpf-error {
+  font-size: 15px;
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  section {
+    background-image: url(../html/img/pexels-andrea-piacquadio-3869370.jpg);
+    background-size: cover;
+    background-position: 90%;
+    min-height: 800px;
+  }
+  nav {
+    height: 80px;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  nav > a {
+    color: rgb(166, 81, 222);
+    font-size: 1.2em;
+  }
+  img {
+    height: 25px;
+  }
+  .texts {
+    gap: 10px;
+    width: 100%;
+  }
+
+  .texts > h1 {
+    font-size: 1.55rem;
+    margin-left: 18px;
+    width: 90%;
+    white-space: nowrap;
+  }
+  .texts > h3 {
+    font-size: 1rem;
+    margin-left: 18px;
+    white-space: wrap;
+    width: 90%;
+  }
+  .allBlack {
+    flex-direction: column;
+    justify-content: end;
+    min-height: 800px;
+    gap: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .aside {
+    height: 280px;
+    width: 300px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    gap: 20px;
+  }
+  .aside > h3 {
+    padding: 21px;
+    color: black;
+    font-size: 0.4em;
+    font-family: "Raleway", sans-serif;
+  }
+  .a-cpf > label {
+    font-size: 15px;
+  }
+  .a-cpf > input {
+    height: 50px;
+    font-size: 0.5em;
+  }
+  .btn-continue {
+    width: 90%;
+    height: 40px;
+    font-size: 15px;
+  }
+  .btn-continue-habilited {
+    width: 90%;
+    height: 40px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+  section {
+    background-image: url(../html/img/pexels-ketut-subiyanto-4909462.jpg);
+    background-size: cover;
+    background-position: 60%;
+    min-height: 900px;
+
+  }
+  nav {
+    height: 88px;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  nav > a {
+    color: rgb(166, 81, 222);
+    font-size: 1.2em;
+  }
+  img {
+    height: 25px;
+  }
+  .texts {
+    gap: 10px;
+    width: 100%;
+  }
+
+  .texts > h1 {
+    font-size: 1.85rem;
+    margin-left: 25px;
+    width: 90%;
+    white-space: wrap;
+  }
+  .texts > h3 {
+    font-size: 1.15rem;
+    margin-left: 25px;
+    white-space: wrap;
+    width: 90%;
+  }
+  .allBlack {
+    flex-direction: column;
+    justify-content: end;
+    min-height: 900px;
+    gap: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .aside {
+    height: 280px;
+    width: 300;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    gap: 20px;
+  }
+  .aside > h3 {
+    padding: 21px;
+    color: black;
+    font-size: 0.4em;
+    font-family: "Raleway", sans-serif;
+  }
+  .a-cpf > label {
+    font-size: 15px;
+  }
+  .a-cpf > input {
+    height: 50px;
+    font-size: 0.5em;
+  }
+  .btn-continue {
+    width: 90%;
+    height: 40px;
+    font-size: 15px;
+  }
+  .btn-continue-habilited {
+    width: 90%;
+    height: 40px;
+    font-size: 15px;
+  }
+  #cpf-error {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1111px) {
+  section {
+    background-image: url(../html/img/pexels-ketut-subiyanto-4909462.jpg);
+    background-size: cover;
+    background-position: 40%;
+    max-height: 1200px;
+  }
+  nav {
+    height: 70px;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  nav > a {
+    color: rgb(166, 81, 222);
+    font-size: 1.2em;
+  }
+  img {
+    height: 25px;
+  }
+  .texts {
+    gap: 10px;
+    width: 100%;
+  }
+
+  .texts > h1 {
+    margin-top: 50px;
+    font-size: 3.6rem;
+    margin-left: 25px;
+    width: 480px;
+  }
+  .texts > h3 {
+    font-size: 1.6rem;
+    margin-left: 25px;
+    white-space: wrap;
+    width: 450px;
+  }
+  .allBlack {
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    max-height: 1300px;
+    gap: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .aside {
+    height: 310px;
+    width: 340;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-right: 30px;
+  }
+  .aside > h3 {
+    padding: 21px;
+    color: black;
+    font-size: 0.4em;
+    font-family: "Raleway", sans-serif;
+  }
+  .a-cpf > label {
+    font-size: 15px;
+  }
+  .a-cpf > input {
+    height: 50px;
+    font-size: 0.5em;
+  }
+  .btn-continue {
+    width: 90%;
+    height: 50px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .btn-continue-habilited {
+    width: 90%;
+    height: 50px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  #cpf-error {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1111px) and (max-width: 2000px) {
+  section {
+    background-image: url(../html/img/pexels-fauxels-3228761.jpg);
+    background-size: cover;
+    background-position: 40%;
+    max-height: 1200px;
+  }
+  nav{
+    height: 70px;
+  }
+  .allBlack{
+    max-height: 1200px;
+
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 2200px) {
+  section {
+    background-image: url(../html/img/pexels-andrea-piacquadio-3756682.jpg);
+    background-position: 40%;
+    min-height: 800px;
+    background-size: cover;
+  }
+  nav {
+    height: 100px;
+    width: 100%;
+  }
+  nav > a {
+    color: rgb(166, 81, 222);
+    font-family: "Raleway", sans-serif;
+    font-size: 2em;
+  }
+  img {
+    height: 32.5px;
+  }
+  .texts > h1 {
+    font-size: 3.7rem;
+    line-height: 1.16;
+    font-family: "Raleway", sans-serif;
+    margin-left: 90px;
+    font-weight: 800;
+  }
+  .texts > h3 {
+    padding-top: 10px;
+    font-size: 1.7rem;
+    line-height: 1.32;
+    margin-left: 90px;
+    font-family: "Raleway", sans-serif;
+  }
+  .aside {
+    height: 350px;
+    width: 380px;
+    background-color: #ffffff;
+  }
+  .aside > h3 {
+    padding: 21px;
+    color: black;
+    font-size: 0.6em;
+    font-family: "Raleway", sans-serif;
+  }
+  .a-cpf > label {
+    font-size: 18px;
+  }
+  .a-cpf > input {
+    height: 55px;
+    font-size: 0.7em;
+  }
+  .btn-continue {
+    width: 340px;
+    height: 60px;
+  }
+  .btn-continue-habilited {
+    width: 340px;
+    height: 60px;
+    font-size: 18px;
+  }
+  #cpf-error {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 2200px) and (max-width: 2561px) {
+  section {
+    background-image: url(../html/img/pexels-andrea-piacquadio-3756682.jpg);
+    background-position: 30%;
+    background-size: cover;
+
+  }
+  nav {
+    height: 115px;
+    width: 100%;
+  }
+  nav > a {
+    color: rgb(166, 81, 222);
+    font-family: "Raleway", sans-serif;
+    font-size: 2em;
+  }
+  img {
+    height: 32.5px;
+  }
+  .texts > h1 {
+    font-size: 4.5rem;
+    line-height: 1.16;
+    font-family: "Raleway", sans-serif;
+    margin-left: 90px;
+    font-weight: 800;
+  }
+  .texts > h3 {
+    padding-top: 10px;
+    font-size: 1.995rem;
+    line-height: 1.32;
+    margin-left: 90px;
+    font-family: "Raleway", sans-serif;
+  }
+  .aside {
+    height: 367px;
+    width: 400px;
+    background-color: #ffffff;
+  }
+  .aside > h3 {
+    padding: 21px;
+    color: black;
+    font-size: 0.6em;
+    font-family: "Raleway", sans-serif;
+  }
+  .a-cpf > label {
+    font-size: 20px;
+  }
+  .a-cpf > input {
+    height: 60px;
+    font-size: 0.7em;
+  }
+  .btn-continue {
+    width: 350px;
+    height: 60px;
+  }
+  .btn-continue-habilited {
+    width: 350px;
+    height: 60px;
+    font-size: 18px;
+  }
+  #cpf-error {
+    font-size: 20px;
+  }
+}

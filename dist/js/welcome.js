@@ -1,0 +1,1 @@
+document.getElementById('name').textContent = sessionStorage.getItem('name')
